@@ -25,8 +25,8 @@ page:
   hidePoweredBy: true
   logo:
     src: https://www.magileads.com/wp-content/uploads/2024/12/Magileads-logo-horizontal-2.svg
-    width: 445px
-    height: 56px
+    width: 385px
+    height: 48px
     link: https://www.magileads.com
   auth:
     enabled: false
