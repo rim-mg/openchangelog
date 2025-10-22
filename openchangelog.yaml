@@ -12,8 +12,8 @@ local:
   filesPath: /release-notes
 cache: 
   type: memory
-#   disk:
-#     location: /data/cache/
+  disk:
+    location: /data/cache/
 #analytics:
   #provider: tinybird
   #tinybird:
@@ -32,6 +32,6 @@ page:
     enabled: false
     # passwordHash: bcrypt encrypted hash of password
 search:
-  type: disk
+  type: memory
   disk:
     path: /data/search
