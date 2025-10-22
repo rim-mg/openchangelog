@@ -6,10 +6,33 @@ services:
     ports:
       - "6001:6001"
     volumes:
-      - ./release-notes:/release-notes
+      # Mount the shared volume for release notes
+      - release-notes-data:/release-notes
+      # Mount your local config file
       - ./openchangelog.yaml:/etc/openchangelog.yaml
     restart: unless-stopped
 
+  markdown-editor:
+    image: "lscr.io/linuxserver/code-server:latest"
+    ports:
+      - "8443:8443"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC # Set your timezone
+      - PASSWORD=magileads # Uncomment to set a password
+      # - SUDO_PASSWORD=yoursecretpassword # Uncomment to set a sudo password
+    volumes:
+      # Mount a volume for the editor's own configuration
+      - code-server-config:/config
+      # Mount the *same* shared volume as openchangelog
+      # This path makes it the default workspace when you open the editor
+      - release-notes-data:/config/workspace
+    restart: unless-stopped
+
 volumes:
-  release-notes:
-  openchangelog-config:
+  # This is the volume both containers will share
+  release-notes-data:
+  
+  # This volume is just for the editor's settings
+  code-server-config:
