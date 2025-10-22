@@ -10,8 +10,8 @@ addr: 0.0.0.0:6001
 #    accessToken:
 local:
   filesPath: /release-notes
-# cache: 
-#   type: disk
+cache: 
+  type: memory
 #   disk:
 #     location: /data/cache/
 #analytics:
@@ -25,8 +25,8 @@ page:
   hidePoweredBy: true
   logo:
     src: https://www.magileads.com/wp-content/uploads/2024/12/Magileads-logo-horizontal-2.svg
-    width: 385px
-    height: 48px
+    width: 320px
+    height: 32px
     link: https://www.magileads.com
   auth:
     enabled: false
