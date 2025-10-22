@@ -21,8 +21,8 @@ cache:
 page:
   title: Magileads Changelog
   subtitle: Changelog on magileads front v4 integrations
-  colorScheme: system
-  hidePoweredBy: false
+  colorScheme: light
+  hidePoweredBy: true
   logo:
     src: https://www.magileads.com/wp-content/uploads/2024/12/Magileads-logo-horizontal-2.svg
     width: 445px
