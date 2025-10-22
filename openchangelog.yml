@@ -19,15 +19,15 @@ cache:
   #tinybird:
   #  accessToken:
 page:
-  title: Changelog
-  subtitle: The latest product updates from Openchangelog
+  title: Magileads Changelog
+  subtitle: Changelog on magileads front v4 integrations
   colorScheme: system
   hidePoweredBy: false
   logo:
-    src: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png
-    width: 70px
-    height: 25px
-    link: https://www.openchangelog.com
+    src: https://www.magileads.com/wp-content/uploads/2024/12/Magileads-logo-horizontal-2.svg
+    width: 445px
+    height: 56px
+    link: https://www.magileads.com
   auth:
     enabled: false
     # passwordHash: bcrypt encrypted hash of password
