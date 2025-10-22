@@ -6,8 +6,8 @@ services:
     ports:
       - "6001:6001"
     volumes:
-      - release-notes:/release-notes
-      - openchangelog-config:/etc/
+      - ./release-notes:/release-notes
+      - ./openchangelog.yaml:/etc/openchangelog.yaml
     restart: unless-stopped
 
 volumes:
