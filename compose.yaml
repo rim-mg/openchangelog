@@ -1,9 +1,0 @@
-services:
-  openchangelog:
-    image: ghcr.io/jonashiltl/openchangelog:0.6.2
-    ports:
-      - "6001:6001"
-    volumes:
-      - type: bind
-        source: openchangelog.example.yml
-        target: /etc/openchangelog.yml

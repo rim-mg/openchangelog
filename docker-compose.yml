@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  openchangelog:
+    image: "ghcr.io/jonashiltl/openchangelog:0.6.2"
+    ports:
+      - "6001:6001"
+    volumes:
+      - release-notes:/release-notes
+      - openchangelog-config:/etc/
+    restart: unless-stopped
+
+volumes:
+  release-notes:
+  openchangelog-config:
